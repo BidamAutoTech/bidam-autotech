@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bidam AutoTech | Premium Car Dealership in Ibadan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+
+</head>
+<body class="font-sans bg-gray-50">
+   
+    <!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+
+   <div class="max-w-7xl mx-auto px-4">
+
+    <div class="flex justify-between items-center h-20">
+
+        <!-- LOGO / BRAND -->
+        <a href="#" class="flex items-center gap-3">
+
+            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <i class="fas fa-car text-white text-xl"></i>
+            </div>
+
+            <div>
+                <span class="block text-lg md:text-xl font-extrabold text-gray-900 leading-tight">
+                    Bidam AutoTech
+                </span>
+
+                <span class="hidden sm:block text-xs text-gray-500">
+                    Your trusted car partner
+                </span>
+            </div>
+
+        </a>
+
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex items-center space-x-7">
+
+            <a href="#"
+               class="text-gray-700 font-medium hover:text-blue-600 transition">
+                Home
+            </a>
+
+            <a href="#inventory"
+               class="text-gray-700 font-medium hover:text-blue-600 transition">
+                Inventory
+            </a>
+
+            <a href="#services"
+               class="text-gray-700 font-medium hover:text-blue-600 transition">
+                Services
+            </a>
+
+            <a href="#testimonials"
+               class="text-gray-700 font-medium hover:text-blue-600 transition">
+                Testimonials
+            </a>
+
+            <a href="#contact"
+               class="text-gray-700 font-medium hover:text-blue-600 transition">
+                Contact
+            </a>
+
+
+            <!-- WHATSAPP CTA -->
+            <a href="https://wa.me/2349122240871"
+               target="_blank"
+               class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+
+                <i class="fab fa-whatsapp mr-1"></i>
+                WhatsApp
+            </a>
+
+
+            <!-- CART -->
+            <div class="relative cursor-pointer" onclick="openCart()">
+
+                <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
+
+                <span id="cart-count"
+                    class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">
+                    0
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <div class="md:hidden">
+
+            <button id="menu-btn"
+                class="text-gray-800 focus:outline-none">
+
+                <i class="fas fa-bars text-2xl"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu"
+    class="hidden md:hidden bg-white border-t px-4 pb-4 shadow-md">
+
+    <a href="#"
+       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+        Home
+    </a>
+
+    <a href="#inventory"
+       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+        Inventory
+    </a>
+
+    <a href="#services"
+       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+        Services
+    </a>
+
+    <a href="#testimonials"
+       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+        Testimonials
+    </a>
+
+    <a href="#contact"
+       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+        Contact
+    </a>
+
+   <a href="https://wa.me/2349122240871"
+       target="_blank"
+       class="block mt-2 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-semibold">
+
+        <i class="fab fa-whatsapp mr-1"></i>
+        Chat on WhatsApp
+
+    </a>
+
+</div>
+
+</nav>
+
+   <!-- HERO SECTION -->
+<section class="hero min-h-[85vh] md:h-screen flex items-center justify-center text-white relative overflow-hidden">
+
+    <!-- SLIDESHOW -->
+    <div class="absolute inset-0">
+
+        <img src="images/honda-2020.jpeg" class="slide" alt="Honda">
+
+        <img src="images/toyota-2003.jpeg" class="slide" alt="Toyota">
+
+        <img src="images/toyota-2004.jpeg" class="slide" alt="Toyota">
+
+        <img src="images/camry-2011.jpeg" class="slide" alt="Toyota Camry">
+
+        <img src="images/camry-2013.jpeg" class="slide" alt="Toyota Camry">
+
+        <img src="images/highlander-2015.jpeg" class="slide" alt="Toyota Highlander">
+
+        <img src="images/honda-2020.jpeg" class="slide" alt="Honda">
+
+        <img src="images/lexus-2017.jpeg" class="slide" alt="Lexus">
+
+    </div>
+
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+
+    <!-- SUBTLE GRADIENT -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/70"></div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+
+
+        <!-- BRAND -->
+        <div class="inline-flex items-center gap-3
+                    bg-black/30 backdrop-blur-md
+                    border border-white/20
+                    px-5 py-2.5 rounded-full
+                    mb-7">
+
+            <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+
+            <span class="text-xs md:text-sm font-semibold
+                         tracking-[0.25em] uppercase">
+                Bidam AutoTech
+            </span>
+
+        </div>
+
+
+        <!-- HEADLINE -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+                   font-extrabold leading-[1.05]
+                   tracking-tight">
+
+            Drive Away With
+
+            <span class="block text-blue-400 mt-2">
+                Confidence.
+            </span>
+
+        </h1>
+
+
+        <!-- DESCRIPTION -->
+        <p class="text-base sm:text-lg md:text-xl
+                  text-gray-200
+                  max-w-2xl mx-auto
+                  mt-6 leading-relaxed">
+
+            Quality Tokunbo and Nigerian-used vehicles,
+            carefully selected for value, reliability and
+            peace of mind.
+
+        </p>
+
+
+        <!-- TRUST POINTS -->
+        <div class="flex flex-wrap justify-center
+                    gap-x-6 gap-y-3
+                    mt-7
+                    text-sm text-gray-200">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fas fa-circle-check text-green-400"></i>
+
+                <span>Verified Vehicles</span>
+
+            </div>
+
+
+            <div class="flex items-center gap-2">
+
+                <i class="fas fa-circle-check text-green-400"></i>
+
+                <span>Fair Pricing</span>
+
+            </div>
+
+
+            <div class="flex items-center gap-2">
+
+                <i class="fas fa-circle-check text-green-400"></i>
+
+                <span>Trusted Service</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTA BUTTONS -->
+        <div class="flex flex-col sm:flex-row
+                    justify-center gap-4
+                    mt-9">
+
+
+            <!-- INVENTORY -->
+            <a href="#inventory"
+               class="inline-flex items-center justify-center
+                      gap-2
+                      bg-blue-600
+                      hover:bg-blue-700
+                      text-white
+                      px-7 py-3.5
+                      rounded-lg
+                      font-bold
+                      shadow-xl
+                      transition duration-300
+                      hover:-translate-y-0.5">
+
+                <i class="fas fa-car"></i>
+
+                View Available Cars
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/2349122240871"
+               target="_blank"
+               class="inline-flex items-center justify-center
+                      gap-2
+                      bg-green-600
+                      hover:bg-green-700
+                      text-white
+                      px-7 py-3.5
+                      rounded-lg
+                      font-bold
+                      shadow-xl
+                      transition duration-300
+                      hover:-translate-y-0.5">
+
+                <i class="fab fa-whatsapp text-lg"></i>
+
+                Chat on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- SMALL LOCATION LINE -->
+        <div class="flex items-center justify-center
+                    gap-2 mt-7
+                    text-xs md:text-sm
+                    text-gray-300">
+
+            <i class="fas fa-location-dot text-blue-400"></i>
+
+            <span>Ibadan, Oyo State</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCROLL INDICATOR -->
+    <a href="#inventory"
+       class="absolute bottom-7 left-1/2
+              -translate-x-1/2
+              z-10
+              text-white/70
+              hover:text-white
+              transition">
+
+        <div class="flex flex-col items-center gap-2">
+
+            <span class="text-[10px] uppercase
+                         tracking-[0.3em]">
+                Explore
+            </span>
+
+            <i class="fas fa-chevron-down animate-bounce"></i>
+
+        </div>
+
+    </a>
+
+</section>
+
+<section class="bg-white py-10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-600">25+</h2>
+                <p class="text-gray-600 mt-2">Cars Sold</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-600">40+</h2>
+                <p class="text-gray-600 mt-2">Available Cars</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-600">18+</h2>
+                <p class="text-gray-600 mt-2">Happy Customers</p>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-600">3+</h2>
+                <p class="text-gray-600 mt-2">Years Experience</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- SEARCH SECTION -->
+<section class="relative z-20 py-10 px-4">
+    
+    <!-- INVENTORY SEARCH -->
+<div class="max-w-6xl mx-auto mb-14">
+
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
+
+        <!-- TITLE -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-7">
+
+            <div>
+                <div class="flex items-center gap-2 text-blue-600 font-semibold text-sm mb-2">
+                    <i class="fas fa-sliders-h"></i>
+                    VEHICLE SEARCH
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+                    Find Your Perfect Car
+                </h2>
+
+                <p class="text-gray-500 text-sm mt-1">
+                    Search our available vehicles by make, model and budget.
+                </p>
+            </div>
+
+            <div class="hidden md:flex items-center gap-2 text-sm text-gray-500">
+                <i class="fas fa-check-circle text-green-500"></i>
+                Updated inventory
+            </div>
+
+        </div>
+
+
+        <!-- FILTER GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+            <!-- MAKE -->
+            <div>
+
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                    Make
+                </label>
+
+                <select id="make-filter"
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+
+                    <option value="all">All Makes</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Jeep">Jeep</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- MODEL -->
+            <div>
+
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                    Model
+                </label>
+
+                <select id="model-filter"
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+
+                    <option value="all">All Models</option>
+                    <option value="Camry">Camry</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Highlander">Highlander</option>
+                    <option value="Accord">Accord</option>
+                    <option value="RX350">RX350</option>
+                    <option value="ES350">ES350</option>
+                    <option value="Wrangler">Wrangler</option>
+                    <option value="Sienna">Sienna</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- BUDGET -->
+            <div>
+
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                    Budget
+                </label>
+
+                <select id="price-filter"
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+
+                    <option value="all">Any Price</option>
+                    <option value="10000000">Under ₦10M</option>
+                    <option value="20000000">Under ₦20M</option>
+                    <option value="30000000">Under ₦30M</option>
+                    <option value="50000000">Under ₦50M</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SEARCH BUTTON -->
+            <div class="flex items-end">
+
+                <button id="search-button"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
+
+                    <i class="fas fa-search mr-2"></i>
+                    Search Inventory
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+    <!-- INVENTORY SECTION -->
+<section id="inventory" class="py-20 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-12">
+
+            <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+
+                <i class="fas fa-car"></i>
+
+                BIDAM AUTOTECH INVENTORY
+
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+
+                Find Your Next Car
+
+            </h2>
+
+            <p class="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
+
+                Explore our selection of quality Tokunbo and Nigerian-used vehicles.
+                Every vehicle is carefully selected with value and reliability in mind.
+
+            </p>
+
+        </div>
+
+
+        <!-- INVENTORY TRUST POINTS -->
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 text-sm text-gray-600">
+
+            <div class="flex items-center gap-2">
+                <i class="fas fa-circle-check text-green-500"></i>
+                Verified Vehicles
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fas fa-tags text-blue-500"></i>
+                Competitive Prices
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fas fa-handshake text-blue-500"></i>
+                Trusted Service
+            </div>
+
+        </div>
+
+
+        <!-- CAR LIST -->
+        <div id="car-list"
+             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Cars will be injected here by JavaScript -->
+
+        </div>
+
+
+        <!-- EMPTY INVENTORY MESSAGE -->
+        <div id="empty-inventory"
+             class="hidden text-center py-16">
+
+            <div class="text-gray-400 mb-4">
+
+                <i class="fas fa-car-side text-5xl"></i>
+
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+                No vehicles found
+            </h3>
+
+            <p class="text-gray-500">
+                Try adjusting your search or filter options.
+            </p>
+
+        </div>
+
+
+        <!-- BOTTOM CTA -->
+        <div class="text-center mt-14">
+
+            <p class="text-gray-600 mb-4">
+                Can't find the car you're looking for?
+            </p>
+
+            <a href="https://wa.me/2349122240871"
+               target="_blank"
+               class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+
+                <i class="fab fa-whatsapp text-lg"></i>
+
+                Ask Us on WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+   
+  <!-- SERVICES SECTION -->
+<section id="services" class="py-20 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-14">
+
+            <div class="inline-flex items-center gap-2
+                        bg-gray-900 text-white
+                        px-4 py-2 rounded-full
+                        text-sm font-semibold mb-4">
+
+                <i class="fas fa-handshake"></i>
+                BIDAM AUTOTECH SERVICES
+
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                More Than Just Car Sales
+            </h2>
+
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                From finding the right vehicle to sourcing and importing one,
+                Bidam AutoTech helps make the entire car-buying process easier.
+            </p>
+
+        </div>
+
+
+        <!-- SERVICES GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+            <!-- VEHICLE SALES -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-car text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Vehicle Sales
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    Explore quality Tokunbo and Nigerian-used vehicles
+                    selected to give you value and confidence.
+                </p>
+
+            </div>
+
+
+            <!-- CAR SOURCING -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-search text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Car Sourcing
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    Looking for a specific make, model or specification?
+                    We help you find a vehicle that matches your needs and budget.
+                </p>
+
+            </div>
+
+
+            <!-- INSPECTION -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-clipboard-check text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Inspection & Verification
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    We help customers assess and verify vehicles before
+                    making an important purchasing decision.
+                </p>
+
+            </div>
+
+
+            <!-- IMPORTATION -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-ship text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Vehicle Importation
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    We assist customers with sourcing and importing vehicles
+                    according to their preferred specifications.
+                </p>
+
+            </div>
+
+
+            <!-- CAR ADVISORY -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-user-tie text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Car Advisory
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    Not sure what to buy? We help you understand your options
+                    and choose a vehicle that fits your needs and budget.
+                </p>
+
+            </div>
+
+
+            <!-- CUSTOMER SUPPORT -->
+            <div class="group bg-white p-7 rounded-2xl
+                        border border-gray-100
+                        shadow-sm hover:shadow-xl
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                            flex items-center justify-center mb-5
+                            group-hover:scale-105 transition">
+
+                    <i class="fas fa-headset text-white text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Customer Support
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed">
+                    From your first enquiry to completing your purchase,
+                    we're available to guide you through the process.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+
+            <p class="text-gray-600 mb-4">
+                Need help finding your next vehicle?
+            </p>
+
+            <a href="https://wa.me/2349122240871"
+               target="_blank"
+               class="inline-flex items-center gap-2
+                      bg-green-600 hover:bg-green-700
+                      text-white px-7 py-3 rounded-lg
+                      font-semibold transition
+                      shadow-md hover:shadow-lg">
+
+                <i class="fab fa-whatsapp text-lg"></i>
+
+                Talk to Bidam AutoTech
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    
+    <!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="py-20 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-14">
+
+            <div class="inline-flex items-center gap-2
+                        bg-gray-900 text-white
+                        px-4 py-2 rounded-full
+                        text-sm font-semibold mb-4">
+
+                <i class="fas fa-star"></i>
+                CUSTOMER EXPERIENCES
+
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                What Our Customers Say
+            </h2>
+
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Our customers' experiences matter to us.
+                Here's what some of them have to say about buying from Bidam AutoTech.
+            </p>
+
+        </div>
+
+
+        <!-- TESTIMONIAL GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+            <!-- TESTIMONIAL 1 -->
+            <div class="group bg-white p-7 rounded-2xl
+                        shadow-sm border border-gray-100
+                        hover:shadow-xl hover:-translate-y-1
+                        transition duration-300">
+
+                <!-- QUOTE ICON -->
+                <div class="flex justify-between items-start mb-5">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-900
+                                flex items-center justify-center">
+
+                        <i class="fas fa-quote-left text-white"></i>
+
+                    </div>
+
+                    <div class="flex text-yellow-400 text-sm">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL -->
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    "I bought my Toyota Camry from Bidam AutoTech and the
+                    process was smooth. The car was exactly as advertised
+                    and the customer service was excellent."
+                </p>
+
+
+                <!-- CUSTOMER -->
+                <div class="flex items-center pt-5 border-t border-gray-100">
+
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+
+                        <img src="images/testimonials/tunde.jpeg"
+                             alt="Adewale O."
+                             class="w-full h-full object-cover">
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900">
+                            Adewale O.
+                        </h4>
+
+                        <p class="text-sm text-gray-500">
+                            Verified Customer
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TESTIMONIAL 2 -->
+            <div class="group bg-white p-7 rounded-2xl
+                        shadow-sm border border-gray-100
+                        hover:shadow-xl hover:-translate-y-1
+                        transition duration-300">
+
+                <!-- QUOTE ICON -->
+                <div class="flex justify-between items-start mb-5">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-900
+                                flex items-center justify-center">
+
+                        <i class="fas fa-quote-left text-white"></i>
+
+                    </div>
+
+                    <div class="flex text-yellow-400 text-sm">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL -->
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    "Very reliable dealer. I was skeptical at first but they
+                    delivered a clean and verified vehicle without hidden issues.
+                    Highly recommended."
+                </p>
+
+
+                <!-- CUSTOMER -->
+                <div class="flex items-center pt-5 border-t border-gray-100">
+
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+
+                        <img src="images/testimonials/folake.jpeg"
+                             alt="Mrs. Folake A."
+                             class="w-full h-full object-cover">
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900">
+                            Mrs. Folake A.
+                        </h4>
+
+                        <p class="text-sm text-gray-500">
+                            Verified Customer
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TESTIMONIAL 3 -->
+            <div class="group bg-white p-7 rounded-2xl
+                        shadow-sm border border-gray-100
+                        hover:shadow-xl hover:-translate-y-1
+                        transition duration-300">
+
+                <!-- QUOTE ICON -->
+                <div class="flex justify-between items-start mb-5">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-900
+                                flex items-center justify-center">
+
+                        <i class="fas fa-quote-left text-white"></i>
+
+                    </div>
+
+                    <div class="flex text-yellow-400 text-sm">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL -->
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    "I got my Highlander from them and everything checked out
+                    perfectly. Honest pricing and smooth transaction from
+                    start to finish."
+                </p>
+
+
+                <!-- CUSTOMER -->
+                <div class="flex items-center pt-5 border-t border-gray-100">
+
+                    <div class="w-12 h-12 rounded-full
+                                bg-gray-100
+                                flex items-center justify-center mr-4">
+
+                        <i class="fas fa-user text-gray-500"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900">
+                            Tunde M.
+                        </h4>
+
+                        <p class="text-sm text-gray-500">
+                            Verified Customer
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+
+            <p class="text-gray-600 mb-4">
+                Ready to find your next vehicle?
+            </p>
+
+            <a href="https://wa.me/2349122240871"
+               target="_blank"
+               class="inline-flex items-center gap-2
+                      bg-green-600 hover:bg-green-700
+                      text-white px-7 py-3 rounded-lg
+                      font-semibold transition
+                      shadow-md hover:shadow-lg">
+
+                <i class="fab fa-whatsapp"></i>
+                Talk to Bidam AutoTech
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOUNDER SECTION -->
+<section id="founder" class="py-24 bg-white">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2
+                    gap-14 items-center">
+
+
+            <!-- FOUNDER IMAGE -->
+            <div class="flex justify-center">
+
+                <div class="relative">
+
+                    <!-- Subtle frame -->
+                    <div class="absolute -inset-3
+                                border border-gray-200
+                                rounded-3xl">
+                    </div>
+
+                    <img
+                        src="images/owner.jpg"
+                        alt="Founder of Bidam AutoTech"
+                        class="relative w-56 md:w-64
+                               h-auto object-cover
+                               rounded-3xl
+                               grayscale
+                               shadow-xl"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- FOUNDER CONTENT -->
+            <div>
+
+                <!-- LABEL -->
+                <div class="inline-flex items-center gap-2
+                            bg-gray-900 text-white
+                            px-4 py-2 rounded-full
+                            text-xs font-semibold
+                            tracking-wide mb-5">
+
+                    <i class="fas fa-user-tie"></i>
+
+                    THE PERSON BEHIND BIDAM AUTOTECH
+
+                </div>
+
+
+                <!-- TITLE -->
+                <h2 class="text-4xl md:text-5xl
+                           font-extrabold text-gray-900
+                           leading-tight mb-5">
+
+                    Built on Trust.
+                    <br>
+
+                    <span class="text-gray-500">
+                        Driven by Passion.
+                    </span>
+
+                </h2>
+
+
+                <!-- FOUNDER NAME -->
+                <div class="mb-6">
+
+                    <p class="text-2xl font-bold text-gray-900">
+                        Bidam
+                    </p>
+
+                    <p class="text-sm uppercase
+                              tracking-[0.3em]
+                              text-gray-500 mt-1">
+
+                        Founder & CEO
+
+                    </p>
+
+                </div>
+
+
+                <!-- QUOTE -->
+                <blockquote class="border-l-4 border-gray-900
+                                   pl-5 mb-7">
+
+                    <p class="text-xl md:text-2xl
+                              italic text-gray-700
+                              leading-relaxed">
+
+                        "Every customer deserves to know
+                        exactly what they're buying."
+
+                    </p>
+
+                </blockquote>
+
+
+                <!-- DESCRIPTION -->
+                <p class="text-gray-600 leading-7 mb-8">
+
+                    Bidam AutoTech was built on trust, transparency
+                    and a genuine passion for cars. Whether you're
+                    buying, selling or sourcing a vehicle, our goal
+                    is simple — to provide quality cars, honest
+                    advice and a smooth experience every time.
+
+                </p>
+
+
+                <!-- CONTACT -->
+                <div class="flex flex-col sm:flex-row
+                            gap-4 mb-8">
+
+                    <span class="flex items-center gap-2
+                                 text-sm text-gray-600">
+
+                        <i class="fas fa-phone-alt text-gray-900"></i>
+
+                        0912 224 0871
+
+                    </span>
+
+
+                    <span class="flex items-center gap-2
+                                 text-sm text-gray-600">
+
+                        <i class="fas fa-envelope text-gray-900"></i>
+
+                        bidamautotech@gmail.com
+
+                    </span>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+                <a
+                    href="https://wa.me/2349122240871"
+                    target="_blank"
+                    class="inline-flex items-center
+                           justify-center gap-3
+                           bg-gray-900
+                           hover:bg-black
+                           text-white
+                           px-7 py-3.5
+                           rounded-lg
+                           font-semibold
+                           transition
+                           shadow-md hover:shadow-lg"
+                >
+
+                    <i class="fab fa-whatsapp text-xl"></i>
+
+                    Chat With Me on WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+   
+
+    <!-- CONTACT SECTION -->
+<section id="contact" class="py-24 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-14">
+
+            <div class="inline-flex items-center gap-2
+                        bg-gray-900 text-white
+                        px-4 py-2 rounded-full
+                        text-xs font-semibold tracking-wide mb-4">
+
+                <i class="fas fa-comments"></i>
+                GET IN TOUCH
+
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Let's Talk About Your Next Car
+            </h2>
+
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Have a question, want to inspect a vehicle, or ready to
+                schedule a test drive? We're here to help.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+
+            <!-- CONTACT INFORMATION -->
+            <div class="bg-white rounded-2xl p-8 md:p-10
+                        border border-gray-100 shadow-sm">
+
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">
+                    Contact Bidam AutoTech
+                </h3>
+
+
+                <!-- LOCATION -->
+                <div class="flex items-start gap-4 mb-7">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-100
+                                flex items-center justify-center
+                                flex-shrink-0">
+
+                        <i class="fas fa-map-marker-alt text-gray-900"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900 mb-1">
+                            Location
+                        </h4>
+
+                        <p class="text-gray-600 leading-relaxed">
+                           Opposite Ventura, Samonda, Ibadan
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="flex items-start gap-4 mb-7">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-100
+                                flex items-center justify-center
+                                flex-shrink-0">
+
+                        <i class="fas fa-phone-alt text-gray-900"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900 mb-1">
+                            Phone
+                        </h4>
+
+                        <a href="tel:09122240871"
+                           class="text-gray-600 hover:text-gray-900 transition">
+
+                            0912 224 0871
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="flex items-start gap-4 mb-7">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-100
+                                flex items-center justify-center
+                                flex-shrink-0">
+
+                        <i class="fas fa-envelope text-gray-900"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900 mb-1">
+                            Email
+                        </h4>
+
+                        <a href="mailto:bidamautotech@gmail.com"
+                           class="text-gray-600 hover:text-gray-900 transition">
+
+                            bidamautotech@gmail.com
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HOURS -->
+                <div class="flex items-start gap-4">
+
+                    <div class="w-12 h-12 rounded-xl
+                                bg-gray-100
+                                flex items-center justify-center
+                                flex-shrink-0">
+
+                        <i class="fas fa-clock text-gray-900"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-gray-900 mb-1">
+                            Business Hours
+                        </h4>
+
+                        <p class="text-gray-600 leading-relaxed">
+
+                            Mon – Fri: 9:00 AM – 7:00 PM<br>
+                            Sat: 9:00 AM – 5:00 PM<br>
+                            Sun: 10:00 AM – 4:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+                <div class="mt-9 pt-7 border-t border-gray-100">
+
+                    <a href="https://wa.me/2349122240871"
+                       target="_blank"
+                       class="inline-flex items-center gap-3
+                              bg-green-600 hover:bg-green-700
+                              text-white px-6 py-3
+                              rounded-lg font-semibold
+                              transition">
+
+                        <i class="fab fa-whatsapp text-xl"></i>
+
+                        Chat With Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <div class="bg-white rounded-2xl p-8 md:p-10
+                        border border-gray-100 shadow-sm">
+
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    Send Us a Message
+                </h3>
+
+                <p class="text-gray-600 mb-7">
+                    Tell us what you're looking for and we'll get back to you.
+                </p>
+
+
+                <form>
+
+                    <!-- NAME -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+
+                        <div>
+
+                            <label class="block text-sm font-semibold
+                                          text-gray-700 mb-2">
+
+                                First Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="First name"
+                                class="w-full p-3.5 border border-gray-300
+                                       rounded-lg focus:outline-none
+                                       focus:ring-2 focus:ring-gray-900
+                                       focus:border-gray-900"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="block text-sm font-semibold
+                                          text-gray-700 mb-2">
+
+                                Last Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Last name"
+                                class="w-full p-3.5 border border-gray-300
+                                       rounded-lg focus:outline-none
+                                       focus:ring-2 focus:ring-gray-900
+                                       focus:border-gray-900"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="mb-5">
+
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+
+                            Email
+
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="you@example.com"
+                            class="w-full p-3.5 border border-gray-300
+                                   rounded-lg focus:outline-none
+                                   focus:ring-2 focus:ring-gray-900
+                                   focus:border-gray-900"
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="mb-5">
+
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+
+                            Phone
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="Your phone number"
+                            class="w-full p-3.5 border border-gray-300
+                                   rounded-lg focus:outline-none
+                                   focus:ring-2 focus:ring-gray-900
+                                   focus:border-gray-900"
+                        >
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="mb-6">
+
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+
+                            Message
+
+                        </label>
+
+                        <textarea
+                            rows="5"
+                            placeholder="Tell us how we can help..."
+                            class="w-full p-3.5 border border-gray-300
+                                   rounded-lg focus:outline-none
+                                   focus:ring-2 focus:ring-gray-900
+                                   focus:border-gray-900"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="w-full bg-gray-900
+                               hover:bg-black
+                               text-white py-3.5
+                               rounded-lg
+                               font-semibold
+                               transition
+                               shadow-md hover:shadow-lg">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    
+
+<!-- FOOTER -->
+<footer class="bg-gray-950 text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+
+            <!-- BRAND -->
+            <div>
+
+                <a href="#"
+                   class="flex items-center gap-3 mb-5">
+
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-lg"></i>
+                    </div>
+
+                    <span class="text-xl font-bold tracking-wide">
+                        Bidam AutoTech
+                    </span>
+
+                </a>
+
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Your trusted partner for quality vehicles, vehicle sourcing,
+                    verification and a smooth car-buying experience.
+                </p>
+
+
+                <!-- SOCIALS -->
+                <div class="flex items-center gap-3">
+
+                    <a href="#"
+                       class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-gray-900 transition">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-gray-900 transition">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="https://wa.me/2349122240871"
+                       target="_blank"
+                       class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:bg-green-600 hover:text-white transition">
+
+                        <i class="fab fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div>
+
+                <h4 class="text-lg font-semibold mb-5">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#"
+                           class="text-gray-400 hover:text-white transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#inventory"
+                           class="text-gray-400 hover:text-white transition">
+                            Inventory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services"
+                           class="text-gray-400 hover:text-white transition">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#testimonials"
+                           class="text-gray-400 hover:text-white transition">
+                            Testimonials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           class="text-gray-400 hover:text-white transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div>
+
+                <h4 class="text-lg font-semibold mb-5">
+                    What We Do
+                </h4>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#inventory"
+                           class="text-gray-400 hover:text-white transition">
+                            Vehicle Sales
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services"
+                           class="text-gray-400 hover:text-white transition">
+                            Vehicle Sourcing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services"
+                           class="text-gray-400 hover:text-white transition">
+                            Vehicle Verification
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services"
+                           class="text-gray-400 hover:text-white transition">
+                            Vehicle Maintenance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           class="text-gray-400 hover:text-white transition">
+                            Contact Our Team
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div>
+
+                <h4 class="text-lg font-semibold mb-5">
+                    Contact Us
+                </h4>
+
+
+                <div class="space-y-4">
+
+                    <!-- PHONE -->
+                    <a href="tel:09122240871"
+                       class="flex items-start gap-3 text-gray-400 hover:text-white transition">
+
+                        <i class="fas fa-phone-alt mt-1"></i>
+
+                        <span>
+                            0912 224 0871
+                        </span>
+
+                    </a>
+
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/2349122240871"
+                       target="_blank"
+                       class="flex items-start gap-3 text-gray-400 hover:text-white transition">
+
+                        <i class="fab fa-whatsapp mt-1"></i>
+
+                        <span>
+                            Chat on WhatsApp
+                        </span>
+
+                    </a>
+
+
+                    <!-- EMAIL -->
+                    <a href="mailto:abisola656@gmail.com"
+                       class="flex items-start gap-3 text-gray-400 hover:text-white transition">
+
+                        <i class="fas fa-envelope mt-1"></i>
+
+                        <span class="break-all">
+                            abisola656@gmail.com
+                        </span>
+
+                    </a>
+
+
+                    <!-- LOCATION -->
+                    <div class="flex items-start gap-3 text-gray-400">
+
+                        <i class="fas fa-map-marker-alt mt-1"></i>
+
+                        <span>
+                            Opposite Ventura,<br>
+                            Samonda, Ibadan
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM -->
+        <div class="border-t border-white/10 mt-12 pt-6
+                    flex flex-col md:flex-row
+                    items-center justify-between gap-3">
+
+            <p class="text-gray-500 text-sm">
+                © 2026 Bidam AutoTech. All rights reserved.
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                Quality Cars. Trusted Service.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    
+    <a href="https://wa.me/2349122240871" 
+   target="_blank"
+   class="whatsapp-float">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- CAR DETAILS MODAL -->
+<div id="car-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+    
+    <div class="bg-white max-w-2xl w-full rounded-lg overflow-hidden relative">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-800 text-xl">
+            ✕
+        </button>
+
+        <!-- IMAGE -->
+       <img id="modal-image" class="w-full h-64 object-cover">
+
+<!-- THUMBNAILS -->
+<div id="modal-thumbnails" class="flex gap-2 p-4 overflow-x-auto"></div>
+
+        <!-- CONTENT -->
+        <div class="p-6">
+            <h2 id="modal-title" class="text-2xl font-bold mb-2"></h2>
+            <p id="modal-price" class="text-blue-600 font-bold mb-4"></p>
+
+            <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+                <p><strong>Condition:</strong> <span id="modal-condition"></span></p>
+                <p><strong>Type:</strong> <span id="modal-type"></span></p>
+                <p><strong>Fuel:</strong> <span id="modal-fuel"></span></p>
+                <p><strong>Year:</strong> <span id="modal-year"></span></p>
+                <p><strong>Engine:</strong> <span id="modal-engine"></span></p>
+                <p><strong>Cylinders:</strong> <span id="modal-cylinder"></span></p>
+                <p><strong>Interior:</strong> <span id="modal-interior"></span></p>
+                <p><strong>Status:</strong> <span id="modal-status"></span></p>
+                <p><strong>Transmission:</strong> <span id="modal-transmission"></span></p>
+                <p><strong>Custom Paper:</strong> <span id="modal-custom-paper"></span></p>
+
+                <p><strong>Mileage:</strong> <span id="modal-mileage"></span></p>
+            </div>
+
+            <!-- WHATSAPP BUTTON -->
+            <a id="modal-whatsapp"
+               target="_blank"
+               class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded">
+                Chat on WhatsApp
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CART PANEL -->
+<div id="cart-panel"
+     class="fixed top-0 right-0 h-full w-full sm:w-80 bg-white shadow-lg transform translate-x-full transition duration-300 z-50">
+
+    <div class="p-4 border-b flex justify-between items-center">
+        <h2 class="text-xl font-bold">Your Cart</h2>
+        <button onclick="closeCart()" class="text-xl">&times;</button>
+    </div>
+
+    <div id="cart-items" class="p-4 space-y-4 overflow-y-auto h-[70%]">
+        <!-- Items will appear here -->
+    </div>
+
+   <div class="p-4 border-t">
+
+    <p class="text-lg font-bold mb-3">
+        Total: <span id="cart-total">₦0</span>
+    </p>
+
+    <a id="checkout-btn"
+       target="_blank"
+       class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded text-center">
+        Buy on WhatsApp
+    </a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

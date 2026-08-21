@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidam AutoTech Admin</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-6xl mx-auto p-8">
+
+    <h1 class="text-4xl font-bold mb-8">
+        Bidam AutoTech Admin
+    </h1>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Add New Car
+        </h2>
+
+        <form id="carForm" class="grid md:grid-cols-2 gap-4">
+
+    <!-- Basic Information -->
+    <input id="name"
+        class="border p-3 rounded"
+        placeholder="Car Name"
+        required>
+
+    <input id="price"
+        class="border p-3 rounded"
+        placeholder="Price"
+        required>
+
+    <input id="year"
+        class="border p-3 rounded"
+        placeholder="Year"
+        required>
+
+    <input id="customPaper"
+        class="border p-3 rounded"
+        placeholder="Custom Paper Year">
+
+    <!-- Vehicle Information -->
+    <input id="type"
+        class="border p-3 rounded"
+        placeholder="Type (SUV, Sedan, etc.)">
+
+    <input id="fuel"
+        class="border p-3 rounded"
+        placeholder="Fuel">
+
+    <input id="transmission"
+        class="border p-3 rounded"
+        placeholder="Transmission">
+
+    <input id="mileage"
+        class="border p-3 rounded"
+        placeholder="Mileage">
+
+    <!-- Engine -->
+    <input id="engine"
+        class="border p-3 rounded"
+        placeholder="Engine (e.g. 2GR-FE 3.5L V6)">
+
+    <input id="cylinders"
+        class="border p-3 rounded"
+        placeholder="Cylinders">
+
+    <!-- Appearance / Condition -->
+    <input id="condition"
+        class="border p-3 rounded"
+        placeholder="Condition (Foreign Used)">
+
+    <input id="interior"
+        class="border p-3 rounded"
+        placeholder="Interior Color">
+
+    <!-- Status -->
+    <input id="status"
+        class="border p-3 rounded"
+        placeholder="Status (Available)">
+
+    <!-- Image -->
+    <!-- Car Images -->
+<div class="md:col-span-2 border p-4 rounded">
+
+    <label class="block font-semibold mb-2">
+        Car Images
+    </label>
+
+    <input
+        id="images"
+        type="text"
+        class="border p-3 rounded w-full"
+        placeholder="images/car-front.jpeg, images/car-side.jpeg, images/car-interior.jpeg"
+    >
+
+    <p class="text-sm text-gray-500 mt-2">
+        Enter multiple image paths separated by commas.
+    </p>
+
+</div>
+
+    <!-- Options -->
+    <label class="flex items-center gap-2 border p-3 rounded">
+        <input id="featured" type="checkbox">
+        Featured Car
+    </label>
+
+    <label class="flex items-center gap-2 border p-3 rounded">
+        <input id="newArrival" type="checkbox">
+        New Arrival
+    </label>
+
+    <button
+        type="submit"
+        class="md:col-span-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded">
+        Save Car
+    </button>
+
+</form>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
