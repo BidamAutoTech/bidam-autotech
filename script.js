@@ -278,7 +278,37 @@ const savedCars = JSON.parse(localStorage.getItem("cars")) || [];
 console.log("Saved cars:", savedCars);
 console.log("Saved cars length:", savedCars.length);
 
+// Combine saved cars with the original inventory
 cars.push(...savedCars);
+
+
+// Priority sorting
+cars.sort((a, b) => {
+
+    // 1. New arrivals always come first
+    if (a.newArrival && !b.newArrival) return -1;
+    if (!a.newArrival && b.newArrival) return 1;
+
+    // 2. If both are new arrivals,
+    // newest added car comes first
+    if (a.newArrival && b.newArrival) {
+        return (b.dateAdded || 0) - (a.dateAdded || 0);
+    }
+
+    // 3. Featured cars come next
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+
+    // 4. If neither is a new arrival,
+    // higher-priced cars get priority
+    const priceA =
+        parseFloat(String(a.price || "").replace(/[₦,]/g, "").replace(/m/i, "")) || 0;
+
+    const priceB =
+        parseFloat(String(b.price || "").replace(/[₦,]/g, "").replace(/m/i, "")) || 0;
+
+    return priceB - priceA;
+});
 
 console.log("Total cars:", cars.length);
 

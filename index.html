@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Bidam AutoTech | Premium Car Dealership in Ibadan</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    bidam: {
+                        black: '#0A0A0A',
+                        red: '#C8102E',
+                        gold: '#D4AF37',
+                        white: '#FFFFFF'
+                    }
+                }
+            }
+        }
+    }
+</script>
      <link rel="stylesheet" href="style.css">
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    
 
 </head>
-<body class="font-sans bg-gray-50">
+
+<body class="font-sans bg-white">
    
     <!-- Navigation -->
-<nav class="bg-white shadow-lg sticky top-0 z-50">
+<nav class="bg-bidam-black shadow-lg sticky top-0 z-50">
 
    <div class="max-w-7xl mx-auto px-4">
 
@@ -23,17 +40,17 @@
         <!-- LOGO / BRAND -->
         <a href="#" class="flex items-center gap-3">
 
-            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <i class="fas fa-car text-white text-xl"></i>
-            </div>
+           <div class="w-10 h-10 bg-bidam-red rounded-lg flex items-center justify-center">
+    <i class="fas fa-car text-white text-xl"></i>
+</div>
 
             <div>
-                <span class="block text-lg md:text-xl font-extrabold text-gray-900 leading-tight">
+                <span class="block text-lg md:text-xl font-extrabold text-white leading-tight">
                     Bidam AutoTech
                 </span>
 
-                <span class="hidden sm:block text-xs text-gray-500">
-                    Your trusted car partner
+                <span class="hidden sm:block text-xs text-bidam-gold">
+                Your trusted car partner
                 </span>
             </div>
 
@@ -44,29 +61,29 @@
         <div class="hidden md:flex items-center space-x-7">
 
             <a href="#"
-               class="text-gray-700 font-medium hover:text-blue-600 transition">
+              class="text-white font-medium hover:text-bidam-gold transition">
                 Home
             </a>
 
             <a href="#inventory"
-               class="text-gray-700 font-medium hover:text-blue-600 transition">
+               class="text-white font-medium hover:text-bidam-gold transition">
                 Inventory
             </a>
 
             <a href="#services"
-               class="text-gray-700 font-medium hover:text-blue-600 transition">
+               class="text-white font-medium hover:text-bidam-gold transition">
                 Services
             </a>
 
-            <a href="#testimonials"
-               class="text-gray-700 font-medium hover:text-blue-600 transition">
-                Testimonials
-            </a>
+           <a href="#testimonials"
+   class="text-white font-medium hover:text-bidam-gold transition">
+    Testimonials
+</a>
 
-            <a href="#contact"
-               class="text-gray-700 font-medium hover:text-blue-600 transition">
-                Contact
-            </a>
+<a href="#contact"
+   class="text-white font-medium hover:text-bidam-gold transition">
+    Contact
+</a>
 
 
             <!-- WHATSAPP CTA -->
@@ -82,10 +99,10 @@
             <!-- CART -->
             <div class="relative cursor-pointer" onclick="openCart()">
 
-                <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
+               <i class="fas fa-shopping-cart text-xl text-white hover:text-bidam-gold transition"></i>
 
                 <span id="cart-count"
-                    class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">
+                    class="absolute -top-2 -right-2 bg-bidam-red text-white text-xs px-2 py-1 rounded-full">
                     0
                 </span>
 
@@ -98,7 +115,7 @@
         <div class="md:hidden">
 
             <button id="menu-btn"
-                class="text-gray-800 focus:outline-none">
+    class="text-white hover:text-bidam-gold focus:outline-none transition">
 
                 <i class="fas fa-bars text-2xl"></i>
 
@@ -113,30 +130,30 @@
 
 <!-- MOBILE MENU -->
 <div id="mobile-menu"
-    class="hidden md:hidden bg-white border-t px-4 pb-4 shadow-md">
+    class="hidden md:hidden bg-bidam-black border-t border-gray-800 px-4 pb-4 shadow-md">
 
     <a href="#"
-       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+       class="block py-3 text-white font-medium hover:text-bidam-gold transition">
         Home
     </a>
 
     <a href="#inventory"
-       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+       class="block py-3 text-white font-medium hover:text-bidam-gold transition">
         Inventory
     </a>
 
     <a href="#services"
-       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+       class="block py-3 text-white font-medium hover:text-bidam-gold transition">
         Services
     </a>
 
     <a href="#testimonials"
-       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+       class="block py-3 text-white font-medium hover:text-bidam-gold transition">
         Testimonials
     </a>
 
     <a href="#contact"
-       class="block py-3 text-gray-700 font-medium hover:text-blue-600">
+       class="block py-3 text-white font-medium hover:text-bidam-gold transition">
         Contact
     </a>
 
@@ -197,7 +214,7 @@
                     px-5 py-2.5 rounded-full
                     mb-7">
 
-            <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+            <span class="w-2 h-2 bg-bidam-red rounded-full"></span>
 
             <span class="text-xs md:text-sm font-semibold
                          tracking-[0.25em] uppercase">
@@ -214,24 +231,24 @@
 
             Drive Away With
 
-            <span class="block text-blue-400 mt-2">
-                Confidence.
-            </span>
+            <span class="block text-bidam-gold mt-2">
+    Confidence.
+    </span>
 
         </h1>
 
 
         <!-- DESCRIPTION -->
-        <p class="text-base sm:text-lg md:text-xl
-                  text-gray-200
-                  max-w-2xl mx-auto
-                  mt-6 leading-relaxed">
+       <p class="text-base sm:text-lg md:text-xl
+          text-gray-200
+          max-w-2xl mx-auto
+          mt-6 leading-relaxed">
 
-            Quality Tokunbo and Nigerian-used vehicles,
-            carefully selected for value, reliability and
-            peace of mind.
+    We help you find a good car within your budget,
+    with quality vehicles selected for value,
+    reliability and peace of mind.
 
-        </p>
+</p>
 
 
         <!-- TRUST POINTS -->
@@ -279,8 +296,8 @@
             <a href="#inventory"
                class="inline-flex items-center justify-center
                       gap-2
-                      bg-blue-600
-                      hover:bg-blue-700
+                      bg-bidam-red
+                      hover:bg-red-700
                       text-white
                       px-7 py-3.5
                       rounded-lg
@@ -326,7 +343,7 @@
                     text-xs md:text-sm
                     text-gray-300">
 
-            <i class="fas fa-location-dot text-blue-400"></i>
+            <i class="fas fa-location-dot text-bidam-gold"></i>
 
             <span>Ibadan, Oyo State</span>
 
@@ -364,22 +381,22 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
             <div>
-                <h2 class="text-3xl font-bold text-blue-600">25+</h2>
+                <h2 class="text-3xl font-bold text-bidam-red">25+</h2>
                 <p class="text-gray-600 mt-2">Cars Sold</p>
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold text-blue-600">40+</h2>
+                <h2 class="text-3xl font-bold text-bidam-red">40+</h2>
                 <p class="text-gray-600 mt-2">Available Cars</p>
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold text-blue-600">18+</h2>
+                <h2 class="text-3xl font-bold text-bidam-red">18+</h2>
                 <p class="text-gray-600 mt-2">Happy Customers</p>
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold text-blue-600">3+</h2>
+                <h2 class="text-3xl font-bold text-bidam-red">3+</h2>
                 <p class="text-gray-600 mt-2">Years Experience</p>
             </div>
 
@@ -402,7 +419,7 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-7">
 
             <div>
-                <div class="flex items-center gap-2 text-blue-600 font-semibold text-sm mb-2">
+                <div class="flex items-center gap-2 text-bidam-red font-semibold text-sm mb-2">
                     <i class="fas fa-sliders-h"></i>
                     VEHICLE SEARCH
                 </div>
@@ -436,7 +453,7 @@
                 </label>
 
                 <select id="make-filter"
-                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-bidam-red focus:border-bidam-red transition">
 
                     <option value="all">All Makes</option>
                     <option value="Toyota">Toyota</option>
@@ -457,7 +474,7 @@
                 </label>
 
                 <select id="model-filter"
-                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-bidam-red focus:border-bidam-red transition">
 
                     <option value="all">All Models</option>
                     <option value="Camry">Camry</option>
@@ -482,7 +499,7 @@
                 </label>
 
                 <select id="price-filter"
-                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+                    class="w-full p-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-bidam-red focus:border-bidam-red transition">
 
                     <option value="all">Any Price</option>
                     <option value="10000000">Under ₦10M</option>
@@ -499,7 +516,7 @@
             <div class="flex items-end">
 
                 <button id="search-button"
-                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
+                    class="w-full bg-bidam-red hover:bg-red-700 text-white font-semibold py-3.5 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
 
                     <i class="fas fa-search mr-2"></i>
                     Search Inventory
@@ -524,13 +541,15 @@
         <!-- SECTION HEADER -->
         <div class="text-center mb-12">
 
-            <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+           <div class="inline-flex items-center gap-2
+            bg-bidam-black text-bidam-gold
+            px-4 py-2 rounded-full
+            text-sm font-semibold mb-4">
 
-                <i class="fas fa-car"></i>
+    <i class="fas fa-handshake"></i>
+    BIDAM AUTOTECH SERVICES
 
-                BIDAM AUTOTECH INVENTORY
-
-            </div>
+</div>
 
             <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
 
@@ -557,12 +576,12 @@
             </div>
 
             <div class="flex items-center gap-2">
-                <i class="fas fa-tags text-blue-500"></i>
+                <i class="fas fa-tags text-bidam-red"></i>
                 Competitive Prices
             </div>
 
             <div class="flex items-center gap-2">
-                <i class="fas fa-handshake text-blue-500"></i>
+                <i class="fas fa-handshake text-bidam-red"></i>
                 Trusted Service
             </div>
 
@@ -664,9 +683,9 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
-                            flex items-center justify-center mb-5
-                            group-hover:scale-105 transition">
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
+            flex items-center justify-center mb-5
+            group-hover:scale-105 transition">
 
                     <i class="fas fa-car text-white text-2xl"></i>
 
@@ -691,7 +710,7 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
                             flex items-center justify-center mb-5
                             group-hover:scale-105 transition">
 
@@ -718,7 +737,7 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
                             flex items-center justify-center mb-5
                             group-hover:scale-105 transition">
 
@@ -745,7 +764,7 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
                             flex items-center justify-center mb-5
                             group-hover:scale-105 transition">
 
@@ -772,7 +791,7 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
                             flex items-center justify-center mb-5
                             group-hover:scale-105 transition">
 
@@ -799,7 +818,7 @@
                         hover:-translate-y-1
                         transition duration-300">
 
-                <div class="w-14 h-14 bg-gray-900 rounded-xl
+                <div class="w-14 h-14 bg-bidam-red rounded-xl
                             flex items-center justify-center mb-5
                             group-hover:scale-105 transition">
 
@@ -892,9 +911,8 @@
                 <!-- QUOTE ICON -->
                 <div class="flex justify-between items-start mb-5">
 
-                    <div class="w-12 h-12 rounded-xl
-                                bg-gray-900
-                                flex items-center justify-center">
+                    <div class="w-12 h-12 bg-bidam-red rounded-xl
+            flex items-center justify-center">
 
                         <i class="fas fa-quote-left text-white"></i>
 
@@ -958,9 +976,8 @@
                 <!-- QUOTE ICON -->
                 <div class="flex justify-between items-start mb-5">
 
-                    <div class="w-12 h-12 rounded-xl
-                                bg-gray-900
-                                flex items-center justify-center">
+                    <div class="w-12 h-12 bg-bidam-red rounded-xl
+            flex items-center justify-center">
 
                         <i class="fas fa-quote-left text-white"></i>
 
@@ -1024,9 +1041,8 @@
                 <!-- QUOTE ICON -->
                 <div class="flex justify-between items-start mb-5">
 
-                    <div class="w-12 h-12 rounded-xl
-                                bg-gray-900
-                                flex items-center justify-center">
+                   <div class="w-12 h-12 bg-bidam-red rounded-xl
+            flex items-center justify-center">
 
                         <i class="fas fa-quote-left text-white"></i>
 
@@ -1149,10 +1165,10 @@
 
                 <!-- LABEL -->
                 <div class="inline-flex items-center gap-2
-                            bg-gray-900 text-white
-                            px-4 py-2 rounded-full
-                            text-xs font-semibold
-                            tracking-wide mb-5">
+            bg-bidam-black text-bidam-gold
+            px-4 py-2 rounded-full
+            text-xs font-semibold
+            tracking-wide mb-5">
 
                     <i class="fas fa-user-tie"></i>
 
@@ -1195,8 +1211,8 @@
 
 
                 <!-- QUOTE -->
-                <blockquote class="border-l-4 border-gray-900
-                                   pl-5 mb-7">
+                <blockquote class="border-l-4 border-bidam-red pl-5 mb-7">
+                                  
 
                     <p class="text-xl md:text-2xl
                               italic text-gray-700
@@ -1288,9 +1304,9 @@
         <div class="text-center mb-14">
 
             <div class="inline-flex items-center gap-2
-                        bg-gray-900 text-white
-                        px-4 py-2 rounded-full
-                        text-xs font-semibold tracking-wide mb-4">
+            bg-bidam-black text-bidam-gold
+            px-4 py-2 rounded-full
+            text-sm font-semibold mb-4">
 
                 <i class="fas fa-comments"></i>
                 GET IN TOUCH
@@ -1870,50 +1886,146 @@
 </a>
 
 <!-- CAR DETAILS MODAL -->
-<div id="car-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
-    
-    <div class="bg-white max-w-2xl w-full rounded-lg overflow-hidden relative">
+<div id="car-modal"
+     class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
+
+    <div class="bg-white w-full max-w-5xl max-h-[95vh] rounded-xl overflow-y-auto relative shadow-2xl">
 
         <!-- CLOSE BUTTON -->
-        <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-800 text-xl">
+        <button
+            onclick="closeModal()"
+            class="absolute top-4 right-4 z-10
+                   bg-white/90 hover:bg-white
+                   text-gray-800 text-2xl
+                   w-10 h-10 rounded-full
+                   shadow-md">
+
             ✕
+
         </button>
 
-        <!-- IMAGE -->
-       <img id="modal-image" class="w-full h-64 object-cover">
 
-<!-- THUMBNAILS -->
-<div id="modal-thumbnails" class="flex gap-2 p-4 overflow-x-auto"></div>
+        <!-- MAIN IMAGE -->
+
+        <div class="bg-black w-full flex items-center justify-center">
+
+            <img
+                id="modal-image"
+                class="w-full max-h-[70vh] object-contain"
+                src=""
+                alt="Car Image"
+            >
+
+        </div>
+
+
+        <!-- THUMBNAILS -->
+
+        <div
+            id="modal-thumbnails"
+            class="flex gap-3 p-4 overflow-x-auto bg-gray-50"
+        >
+        </div>
+
 
         <!-- CONTENT -->
+
         <div class="p-6">
-            <h2 id="modal-title" class="text-2xl font-bold mb-2"></h2>
-            <p id="modal-price" class="text-blue-600 font-bold mb-4"></p>
 
-            <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
-                <p><strong>Condition:</strong> <span id="modal-condition"></span></p>
-                <p><strong>Type:</strong> <span id="modal-type"></span></p>
-                <p><strong>Fuel:</strong> <span id="modal-fuel"></span></p>
-                <p><strong>Year:</strong> <span id="modal-year"></span></p>
-                <p><strong>Engine:</strong> <span id="modal-engine"></span></p>
-                <p><strong>Cylinders:</strong> <span id="modal-cylinder"></span></p>
-                <p><strong>Interior:</strong> <span id="modal-interior"></span></p>
-                <p><strong>Status:</strong> <span id="modal-status"></span></p>
-                <p><strong>Transmission:</strong> <span id="modal-transmission"></span></p>
-                <p><strong>Custom Paper:</strong> <span id="modal-custom-paper"></span></p>
+            <h2
+                id="modal-title"
+                class="text-2xl md:text-3xl font-bold mb-2"
+            >
+            </h2>
 
-                <p><strong>Mileage:</strong> <span id="modal-mileage"></span></p>
+
+            <p
+                id="modal-price"
+                class="text-bidam-red text-xl font-bold mb-5"
+            >
+            </p>
+
+
+            <!-- CAR DETAILS -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+
+                <p>
+                    <strong>Condition:</strong>
+                    <span id="modal-condition"></span>
+                </p>
+
+                <p>
+                    <strong>Type:</strong>
+                    <span id="modal-type"></span>
+                </p>
+
+                <p>
+                    <strong>Fuel:</strong>
+                    <span id="modal-fuel"></span>
+                </p>
+
+                <p>
+                    <strong>Year:</strong>
+                    <span id="modal-year"></span>
+                </p>
+
+                <p>
+                    <strong>Engine:</strong>
+                    <span id="modal-engine"></span>
+                </p>
+
+                <p>
+                    <strong>Cylinders:</strong>
+                    <span id="modal-cylinder"></span>
+                </p>
+
+                <p>
+                    <strong>Interior:</strong>
+                    <span id="modal-interior"></span>
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    <span id="modal-status"></span>
+                </p>
+
+                <p>
+                    <strong>Transmission:</strong>
+                    <span id="modal-transmission"></span>
+                </p>
+
+                <p>
+                    <strong>Custom Paper:</strong>
+                    <span id="modal-custom-paper"></span>
+                </p>
+
+                <p>
+                    <strong>Mileage:</strong>
+                    <span id="modal-mileage"></span>
+                </p>
+
             </div>
 
+
             <!-- WHATSAPP BUTTON -->
-            <a id="modal-whatsapp"
-               target="_blank"
-               class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded">
+
+            <a
+                id="modal-whatsapp"
+                target="_blank"
+                class="block mt-6 bg-green-600 hover:bg-green-700
+                       text-white text-center py-3 rounded-lg
+                       font-semibold transition"
+            >
+
                 Chat on WhatsApp
+
             </a>
+
         </div>
 
     </div>
+
 </div>
 
 <!-- CART PANEL -->

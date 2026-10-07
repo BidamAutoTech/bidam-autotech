@@ -1,8 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bidam AutoTech Admin</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,123 +15,211 @@
 
 <div class="max-w-6xl mx-auto p-8">
 
+    <!-- PAGE TITLE -->
     <h1 class="text-4xl font-bold mb-8">
         Bidam AutoTech Admin
     </h1>
 
+
+    <!-- ADD / EDIT CAR FORM -->
     <div class="bg-white p-6 rounded-xl shadow">
 
         <h2 class="text-2xl font-bold mb-4">
             Add New Car
         </h2>
 
+
         <form id="carForm" class="grid md:grid-cols-2 gap-4">
 
-    <!-- Basic Information -->
-    <input id="name"
-        class="border p-3 rounded"
-        placeholder="Car Name"
-        required>
 
-    <input id="price"
-        class="border p-3 rounded"
-        placeholder="Price"
-        required>
+            <!-- BASIC INFORMATION -->
 
-    <input id="year"
-        class="border p-3 rounded"
-        placeholder="Year"
-        required>
+            <input
+                id="name"
+                class="border p-3 rounded"
+                placeholder="Car Name"
+                required
+            >
 
-    <input id="customPaper"
-        class="border p-3 rounded"
-        placeholder="Custom Paper Year">
+            <input
+                id="price"
+                class="border p-3 rounded"
+                placeholder="Price"
+                required
+            >
 
-    <!-- Vehicle Information -->
-    <input id="type"
-        class="border p-3 rounded"
-        placeholder="Type (SUV, Sedan, etc.)">
+            <input
+                id="year"
+                class="border p-3 rounded"
+                placeholder="Year"
+                required
+            >
 
-    <input id="fuel"
-        class="border p-3 rounded"
-        placeholder="Fuel">
+            <input
+                id="customPaper"
+                class="border p-3 rounded"
+                placeholder="Custom Paper Year"
+            >
 
-    <input id="transmission"
-        class="border p-3 rounded"
-        placeholder="Transmission">
 
-    <input id="mileage"
-        class="border p-3 rounded"
-        placeholder="Mileage">
+            <!-- VEHICLE INFORMATION -->
 
-    <!-- Engine -->
-    <input id="engine"
-        class="border p-3 rounded"
-        placeholder="Engine (e.g. 2GR-FE 3.5L V6)">
+            <input
+                id="type"
+                class="border p-3 rounded"
+                placeholder="Type (SUV, Sedan, etc.)"
+            >
 
-    <input id="cylinders"
-        class="border p-3 rounded"
-        placeholder="Cylinders">
+            <input
+                id="fuel"
+                class="border p-3 rounded"
+                placeholder="Fuel"
+            >
 
-    <!-- Appearance / Condition -->
-    <input id="condition"
-        class="border p-3 rounded"
-        placeholder="Condition (Foreign Used)">
+            <input
+                id="transmission"
+                class="border p-3 rounded"
+                placeholder="Transmission"
+            >
 
-    <input id="interior"
-        class="border p-3 rounded"
-        placeholder="Interior Color">
+            <input
+                id="mileage"
+                class="border p-3 rounded"
+                placeholder="Mileage"
+            >
 
-    <!-- Status -->
-    <input id="status"
-        class="border p-3 rounded"
-        placeholder="Status (Available)">
 
-    <!-- Image -->
-    <!-- Car Images -->
-<div class="md:col-span-2 border p-4 rounded">
+            <!-- ENGINE -->
 
-    <label class="block font-semibold mb-2">
-        Car Images
-    </label>
+            <input
+                id="engine"
+                class="border p-3 rounded"
+                placeholder="Engine (e.g. 2GR-FE 3.5L V6)"
+            >
 
-    <input
-        id="images"
-        type="text"
-        class="border p-3 rounded w-full"
-        placeholder="images/car-front.jpeg, images/car-side.jpeg, images/car-interior.jpeg"
-    >
+            <input
+                id="cylinders"
+                class="border p-3 rounded"
+                placeholder="Cylinders"
+            >
 
-    <p class="text-sm text-gray-500 mt-2">
-        Enter multiple image paths separated by commas.
-    </p>
 
-</div>
+            <!-- APPEARANCE / CONDITION -->
 
-    <!-- Options -->
-    <label class="flex items-center gap-2 border p-3 rounded">
-        <input id="featured" type="checkbox">
-        Featured Car
-    </label>
+            <input
+                id="condition"
+                class="border p-3 rounded"
+                placeholder="Condition (Foreign Used)"
+            >
 
-    <label class="flex items-center gap-2 border p-3 rounded">
-        <input id="newArrival" type="checkbox">
-        New Arrival
-    </label>
+            <input
+                id="interior"
+                class="border p-3 rounded"
+                placeholder="Interior Color"
+            >
 
-    <button
-        type="submit"
-        class="md:col-span-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded">
-        Save Car
-    </button>
 
-</form>
+            <!-- STATUS -->
+
+            <input
+                id="status"
+                class="border p-3 rounded"
+                placeholder="Status (Available)"
+            >
+
+
+            <!-- CAR IMAGES -->
+
+            <div class="md:col-span-2 border p-4 rounded">
+
+                <label class="block font-semibold mb-2">
+                    Car Images
+                </label>
+
+                <input
+                    id="images"
+                    type="text"
+                    class="border p-3 rounded w-full"
+                    placeholder="images/car-front.jpeg, images/car-side.jpeg, images/car-interior.jpeg"
+                >
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Enter multiple image paths separated by commas.
+                </p>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+
+            <label class="flex items-center gap-2 border p-3 rounded">
+
+                <input
+                    id="featured"
+                    type="checkbox"
+                >
+
+                Featured Car
+
+            </label>
+
+
+            <label class="flex items-center gap-2 border p-3 rounded">
+
+                <input
+                    id="newArrival"
+                    type="checkbox"
+                >
+
+                New Arrival
+
+            </label>
+
+
+            <!-- SAVE / UPDATE BUTTON -->
+
+            <button
+                type="submit"
+                class="md:col-span-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded"
+            >
+                Save Car
+            </button>
+
+
+        </form>
 
     </div>
 
+
+
+    <!-- EXISTING CARS -->
+
+    <div class="bg-white p-6 rounded-xl shadow mt-8">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Existing Cars
+        </h2>
+
+        <div
+            id="carList"
+            class="space-y-4"
+        >
+
+            <!-- Saved cars will appear here -->
+
+        </div>
+
+    </div>
+
+
 </div>
+
+
+<!-- ADMIN JAVASCRIPT -->
 
 <script src="admin.js"></script>
 
 </body>
+
 </html>
+```
